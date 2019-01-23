@@ -12,6 +12,8 @@
 		A150F15421E7774800F2E8C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A150F15221E7774800F2E8C0 /* Main.storyboard */; };
 		A150F15621E7774A00F2E8C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A150F15521E7774A00F2E8C0 /* Assets.xcassets */; };
 		A150F15921E7774A00F2E8C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A150F15721E7774A00F2E8C0 /* LaunchScreen.storyboard */; };
+		AD09488F21F7EE3B00E103AE /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09488E21F7EE3B00E103AE /* BookTableViewCell.swift */; };
+		AD09489121F7EF6200E103AE /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09489021F7EF6200E103AE /* BookTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A150F15521E7774A00F2E8C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A150F15821E7774A00F2E8C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A150F15A21E7774A00F2E8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD09488E21F7EE3B00E103AE /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		AD09489021F7EF6200E103AE /* BookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				A150F15521E7774A00F2E8C0 /* Assets.xcassets */,
 				A150F15721E7774A00F2E8C0 /* LaunchScreen.storyboard */,
 				A150F15A21E7774A00F2E8C0 /* Info.plist */,
+				AD09488E21F7EE3B00E103AE /* BookTableViewCell.swift */,
+				AD09489021F7EF6200E103AE /* BookTableViewController.swift */,
 			);
 			path = 235040_pam_project;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A150F15121E7774800F2E8C0 /* ViewController.swift in Sources */,
+				AD09488F21F7EE3B00E103AE /* BookTableViewCell.swift in Sources */,
+				AD09489121F7EF6200E103AE /* BookTableViewController.swift in Sources */,
 				A150F14F21E7774800F2E8C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
