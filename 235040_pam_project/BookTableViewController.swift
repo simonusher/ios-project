@@ -9,9 +9,17 @@
 import UIKit
 
 class BookTableViewController: UITableViewController {
-    var bookTitles = ["Ostatnie życzenie", "Miecz przeznaczenia", "Krew elfów", "Czas pogardy", "Chrzest ognia", "Sezon burz"]
+    var bookTitles = ["Ostatnie życzenie", "Miecz przeznaczenia", "Krew elfów", "Czas pogardy", "Chrzest ognia", "Wieża jaskółki", "Pani jeziora",  "Sezon burz"]
     var bookAuthors = ["Andrzej Sapkowski", "Andrzej Sapkowski", "Andrzej Sapkowski", "Andrzej Sapkowski", "Andrzej Sapkowski", "Andrzej Sapkowski", "Andrzej Sapkowski", "Andrzej Sapkowski"]
     var bookImages = ["1", "2", "3", "4", "5", "6", "7", "8"]
+    var bookDescriptions = ["Zbiór opowiadań fantasy napisanych przez Andrzeja Spakowskiego i stanowiących wstęp do cyklu o wiedźminie Geralcie. Został wydany przez wydawnictwo superNowa w 1993 roku, a wydanie drugie w roku 2003.",
+                            "Zbiór opowiadań z gatunku fantasy napisanych przez Andrzeja Sapkowskiego. Opowiadania z tego tomu stanowią wprowadzenie do sagi o Geralcie z Rivii i razem z Ostatnim życzeniem wyjaśniają najważniejsze wydarzenia w życiu głównych bohaterów cyklu.",
+                            "Powieść fantasy autorstwa Andrzeja Sapkowskiego, pierwszy raz wydana w 1994 roku. jest pierwszą z pięciu części sagi o wiedźminie tego autora. W 2009 zdobyłaa David Gemmell Awards for Fantasy.",
+                            "Powieść z gatunku fantasy, napisana przez Andrzeja Sapkowskiego, wydana w 1995 roku. Jest drugą z pieciu części sagi o wiedźminie tego autora.",
+                            "Powieść z gatunku fantasy, napisana przez Andrzeja Sapkowskiego, wydana w 1996 roku. Jest trzecią z pięciu części sagi o wiedźminie tego autora.",
+                            "Powieść z gatunku fantasy, napisana przez Andrzeja Sapkowskiego, wydana w 1997 roku. Jest czwartą z pięciu części sagi o wiedźminie tego autora.",
+                            "Powieść z gatunku fantasy, napisana przez Andrzeja Sapkowskiego, wydana w 1999 roku. Jest ostatnią z pięciu części sagi o wiedźminie."
+                            ]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +30,6 @@ class BookTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -49,6 +56,7 @@ class BookTableViewController: UITableViewController {
                 destinationController.bookAuthor = bookAuthors[indexPath.row]
                 destinationController.bookTitle = bookTitles[indexPath.row]
                 destinationController.bookImageName = bookImages[indexPath.row]
+                destinationController.bookDescription = bookDescriptions[indexPath.row]
             }
         }
     }
