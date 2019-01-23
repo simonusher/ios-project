@@ -1,5 +1,5 @@
 //
-//  BookTableViewController.swift
+//  BookTableTableViewController.swift
 //  235040_pam_project
 //
 //  Created by Szymon on 22/01/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BookTableViewController: UITableViewController {
+class BookTableTableViewController: UITableViewController {
     var bookTitles = ["Ostatnie życzenie", "Miecz przeznaczenia", "Krew elfów", "Czas pogardy", "Chrzest ognia", "Wieża jaskółki", "Pani jeziora", "Sezon burz"]
     var bookAuthors = ["Andrzej Sapkowski", "Andrzej Sapkowski", "Andrzej Sapkowski", "Andrzej Sapkowski", "Andrzej Sapkowski", "Andrzej Sapkowski", "Andrzej Sapkowski", "Andrzej Sapkowski"]
     var bookImages = ["1", "2", "3", "4", "5", "6", "7", "8"]
@@ -22,26 +22,14 @@ class BookTableViewController: UITableViewController {
                             "Ciri wpatruje się w wypukły relief przedstawiający ogromnego łuskowatego węża. Gad, zwinąwszy się w kształt ósemki, wgryzł się zębiskami we własny ogon. To pradawny wąż Uroboros. Symbolizuje nieskończoność i sam jest nieskończonością. Jest wiecznym odchodzeniem i wiecznym powracaniem. Jest czymś, co nie ma ani początku, ani końca. A to, że Uroboros gryzie swój ogon, oznacza, że koło jest zamknięte.Ciri, córko Pavetty! Wjedź w portal, podążaj drogą wiodącą na spotkanie przeznaczenia! Koło się zamknęło – myśli Ciri, zamykając oczy. „Jadę, Geralt! Nie zostawię cię samego!” Coś się kończy, coś się zaczyna. W każdym momencie czasu kryje się wieczność.",
                             "Oto nowy Sapkowski i nowy wiedźmin. Mistrz polskiej fantastyki znowu zaskakuje. „Sezon burz” nie opowiada bowiem o młodzieńczych latach białowłosego zabójcy potworów ani o jego losach po śmierci/nieśmierci kończącej ostatni tom sagi. „Nigdy nie mów nigdy!” W powieści pojawiają się osoby doskonale czytelnikom znane, jak wierny druh Geralta – bard i poeta Jaskier – oraz jego ukochana, zwodnicza czarodziejka Yennefer, ale na scenę wkraczają też dosłownie i w przenośni postaci z zupełnie innych bajek. Ludzie, nieludzie i magiczną sztuką wyhodowane bestie. Opowieść zaczyna się wedle reguł gatunku: od trzęsienia ziemi, a potem napięcie rośnie. Wiedźmin stacza morderczą walkę z drapieżnikiem, który żyje tylko po to, żeby zabijać, wdaje się w bójkę z rosłymi, niezbyt sympatycznymi strażniczkami miejskimi, staje przed sądem, traci swe słynne miecze i przeżywa burzliwy romans z rudowłosą pięknością, zwaną Koral. A w tle toczą się królewskie i czarodziejskie intrygi. Pobrzmiewają pioruny i szaleją burze. I tak przez 404 strony porywającej lektury. Wiedźmin. Sezon Burz to w wiedźmińskiej historii rzecz osobna, nie prapoczątek i nie kontynuacja. Jak pisze autor: Opowieść trwa. Historia nie kończy się nigdy…"]
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-
-    // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return bookTitles.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "booksDataCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! BookTableViewCell
@@ -50,6 +38,16 @@ class BookTableViewController: UITableViewController {
         cell.imageView?.image = UIImage(named: bookImages[indexPath.row])
         return cell
     }
+
+    /*
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
+        return cell
+    }
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -87,8 +85,8 @@ class BookTableViewController: UITableViewController {
     */
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
-    
 
 }
