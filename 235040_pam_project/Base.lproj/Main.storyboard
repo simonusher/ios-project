@@ -122,7 +122,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jEj-aA-G4U">
                                             <rect key="frame" x="16" y="11" width="343" height="148"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vsv-Ag-x5f">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vsv-Ag-x5f">
                                                     <rect key="frame" x="0.0" y="4" width="90" height="140"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="140" id="0sl-AZ-gcT"/>
@@ -185,7 +185,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="V43-bV-V2D">
                                 <rect key="frame" x="0.0" y="84" width="375" height="524"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BJt-HS-SS6">
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BJt-HS-SS6">
                                         <rect key="frame" x="52.5" y="0.0" width="270" height="420"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="270" id="9of-cX-MdA"/>
