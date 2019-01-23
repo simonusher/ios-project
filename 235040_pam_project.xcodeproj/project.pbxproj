@@ -15,6 +15,8 @@
 		AD09488F21F7EE3B00E103AE /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09488E21F7EE3B00E103AE /* BookTableViewCell.swift */; };
 		AD09489321F800AA00E103AE /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09489221F800AA00E103AE /* BookDetailViewController.swift */; };
 		ADC6642821F8B6C400F62475 /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC6642721F8B6C400F62475 /* BookTableViewController.swift */; };
+		ADE50BD321F8E9870097D915 /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE50BD221F8E9870097D915 /* MusicTableViewController.swift */; };
+		ADE50BD521F8E9A80097D915 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE50BD421F8E9A80097D915 /* MusicTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		AD09488E21F7EE3B00E103AE /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		AD09489221F800AA00E103AE /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 		ADC6642721F8B6C400F62475 /* BookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
+		ADE50BD221F8E9870097D915 /* MusicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
+		ADE50BD421F8E9A80097D915 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				A150F15A21E7774A00F2E8C0 /* Info.plist */,
 				AD09488E21F7EE3B00E103AE /* BookTableViewCell.swift */,
 				ADC6642721F8B6C400F62475 /* BookTableViewController.swift */,
+				ADE50BD221F8E9870097D915 /* MusicTableViewController.swift */,
+				ADE50BD421F8E9A80097D915 /* MusicTableViewCell.swift */,
 			);
 			path = 235040_pam_project;
 			sourceTree = "<group>";
@@ -148,7 +154,9 @@
 				A150F15121E7774800F2E8C0 /* ViewController.swift in Sources */,
 				AD09488F21F7EE3B00E103AE /* BookTableViewCell.swift in Sources */,
 				A150F14F21E7774800F2E8C0 /* AppDelegate.swift in Sources */,
+				ADE50BD521F8E9A80097D915 /* MusicTableViewCell.swift in Sources */,
 				AD09489321F800AA00E103AE /* BookDetailViewController.swift in Sources */,
+				ADE50BD321F8E9870097D915 /* MusicTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
