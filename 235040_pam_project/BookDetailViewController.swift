@@ -16,7 +16,6 @@ class BookDetailViewController: UIViewController {
     var bookImageName = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        bookImage = UIImage(named: bookImageName)
         // Do any additional setup after loading the view.
     }
     

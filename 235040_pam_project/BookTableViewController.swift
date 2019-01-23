@@ -87,15 +87,7 @@ class BookTableViewController: UITableViewController {
     */
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "bookToDetailsSegue" {
-            if let indexPath = tableView.indexPathForSelectedRow {
-                let destinationController = segue.destination as! BookDetailViewController
-                destinationController.bookTitleLabel?.text = bookTitles[indexPath.row]
-                destinationController.bookAuthorLabel?.text = bookAuthors[indexPath.row]
-                destinationController.bookDescriptionLabel?.text = bookDescriptions[indexPath.row]
-                destinationController.bookImageName = bookImages[indexPath.row]
-            }
-        }
+        
     }
     
 
