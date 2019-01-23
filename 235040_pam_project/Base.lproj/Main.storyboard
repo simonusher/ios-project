@@ -106,7 +106,7 @@
         <!--Książki-->
         <scene sceneID="3X3-aW-3Th">
             <objects>
-                <tableViewController title="Książki" id="YNu-t9-InY" customClass="BookTableTableViewController" customModule="_35040_pam_project" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Książki" id="YNu-t9-InY" customClass="BookTableViewController" customModule="_35040_pam_project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6E8-Yc-5bP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,7 +192,7 @@
                                             <constraint firstAttribute="height" constant="420" id="gFe-fA-PwG"/>
                                         </constraints>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Url-o7-Myw">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Url-o7-Myw">
                                         <rect key="frame" x="166.5" y="435" width="42" height="81.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mf1-yY-S1K">
@@ -227,10 +227,10 @@
                         <viewLayoutGuide key="safeArea" id="Q73-8C-le7"/>
                     </view>
                     <connections>
-                        <outlet property="bookAuthorLabel" destination="Z8t-wr-Htq" id="OLc-oV-KVt"/>
-                        <outlet property="bookDescriptionLabel" destination="vlp-x6-yDx" id="4sR-i1-Go3"/>
-                        <outlet property="bookImage" destination="BJt-HS-SS6" id="YW4-i8-Z0R"/>
-                        <outlet property="bookTitleLabel" destination="Mf1-yY-S1K" id="98D-vo-v8B"/>
+                        <outlet property="bookAuthorLabel" destination="Z8t-wr-Htq" id="U0P-qO-RwJ"/>
+                        <outlet property="bookDescriptionLabel" destination="vlp-x6-yDx" id="Njd-55-8uK"/>
+                        <outlet property="bookImageView" destination="BJt-HS-SS6" id="xHW-dz-Ffm"/>
+                        <outlet property="bookTitleLabel" destination="Mf1-yY-S1K" id="3dQ-n0-EDt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gX-Af-lc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
