@@ -106,7 +106,7 @@
         <!--Książki-->
         <scene sceneID="3X3-aW-3Th">
             <objects>
-                <tableViewController title="Książki" id="YNu-t9-InY" sceneMemberID="viewController">
+                <tableViewController title="Książki" id="YNu-t9-InY" customClass="BookTableViewController" customModule="_35040_pam_project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6E8-Yc-5bP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
