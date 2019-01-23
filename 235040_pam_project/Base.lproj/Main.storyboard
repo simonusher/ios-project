@@ -160,7 +160,7 @@
                                     <outlet property="authorLabel" destination="Rpx-xP-qC3" id="h0M-4b-JB0"/>
                                     <outlet property="thumbnailImageView" destination="Vsv-Ag-x5f" id="pgP-ud-1hm"/>
                                     <outlet property="titleLabel" destination="hYb-xy-qOE" id="hCl-Lb-CJI"/>
-                                    <segue destination="zx1-Yt-I8s" kind="show" id="54E-Qu-hB7"/>
+                                    <segue destination="zx1-Yt-I8s" kind="show" identifier="booksToDetailSegue" id="54E-Qu-hB7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -174,20 +174,68 @@
             </objects>
             <point key="canvasLocation" x="1925.5999999999999" y="-641.82908545727139"/>
         </scene>
-        <!--View Controller-->
+        <!--Book Detail View Controller-->
         <scene sceneID="beF-qn-FU8">
             <objects>
-                <viewController id="zx1-Yt-I8s" sceneMemberID="viewController">
+                <viewController id="zx1-Yt-I8s" customClass="BookDetailViewController" customModule="_35040_pam_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b4Z-Pp-n08">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="V43-bV-V2D">
+                                <rect key="frame" x="0.0" y="84" width="375" height="516.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BJt-HS-SS6">
+                                        <rect key="frame" x="52.5" y="0.0" width="270" height="420"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="270" id="9of-cX-MdA"/>
+                                            <constraint firstAttribute="height" constant="420" id="gFe-fA-PwG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Url-o7-Myw">
+                                        <rect key="frame" x="166.5" y="435" width="42" height="81.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mf1-yY-S1K">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8t-wr-Htq">
+                                                <rect key="frame" x="0.0" y="30.5" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlp-x6-yDx">
+                                                <rect key="frame" x="0.0" y="61" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="V43-bV-V2D" firstAttribute="top" secondItem="Q73-8C-le7" secondAttribute="top" constant="20" id="DKa-3A-stl"/>
+                            <constraint firstItem="V43-bV-V2D" firstAttribute="leading" secondItem="Q73-8C-le7" secondAttribute="leading" id="YED-R5-ud0"/>
+                            <constraint firstItem="Q73-8C-le7" firstAttribute="trailing" secondItem="V43-bV-V2D" secondAttribute="trailing" id="oRK-la-SJK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Q73-8C-le7"/>
                     </view>
+                    <connections>
+                        <outlet property="bookAuthor" destination="Z8t-wr-Htq" id="dMa-Pn-OZT"/>
+                        <outlet property="bookDescription" destination="vlp-x6-yDx" id="EWm-Zc-Xxt"/>
+                        <outlet property="bookImage" destination="BJt-HS-SS6" id="YW4-i8-Z0R"/>
+                        <outlet property="bookTitle" destination="Mf1-yY-S1K" id="KdV-gq-tHF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gX-Af-lc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2812" y="-642"/>
+            <point key="canvasLocation" x="2812" y="-642.72863568215894"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="f5j-jF-CVH">
