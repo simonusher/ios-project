@@ -25,7 +25,10 @@ class BookDetailViewController: UIViewController {
         bookImageView?.image = UIImage(named: bookImageName)
     }
     
-
+    @IBAction func onClick(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
