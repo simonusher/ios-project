@@ -345,10 +345,10 @@
             </objects>
             <point key="canvasLocation" x="1927" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Music Detail View Controller-->
         <scene sceneID="ikw-VW-4dj">
             <objects>
-                <viewController id="9oB-xG-sXp" sceneMemberID="viewController">
+                <viewController id="9oB-xG-sXp" customClass="MusicDetailViewController" customModule="_35040_pam_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kCs-zU-KFR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -359,7 +359,7 @@
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qs-ih-GzJ">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
                                         <connections>
-                                            <segue destination="QGU-K8-4ZU" kind="embed" id="d00-5p-1jR"/>
+                                            <segue destination="QGU-K8-4ZU" kind="embed" identifier="musicToImageSegue" id="d00-5p-1jR"/>
                                         </connections>
                                     </containerView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zMT-BT-J19">
@@ -368,13 +368,13 @@
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAc-Yk-cQj">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="301.5"/>
                                                 <connections>
-                                                    <segue destination="HJX-Pc-H8u" kind="embed" id="v6Y-KE-ldW"/>
+                                                    <segue destination="HJX-Pc-H8u" kind="embed" identifier="musicToListSegue" id="v6Y-KE-ldW"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MPr-zK-dEl">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="301.5"/>
                                                 <connections>
-                                                    <segue destination="JaP-bS-BZ6" kind="embed" id="dxv-Yu-r1u"/>
+                                                    <segue destination="JaP-bS-BZ6" kind="embed" identifier="musicToButtonSegue" id="dxv-Yu-r1u"/>
                                                 </connections>
                                             </containerView>
                                         </subviews>
@@ -402,31 +402,39 @@
             </objects>
             <point key="canvasLocation" x="2812" y="133.5832083958021"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Song Table View Controller-->
         <scene sceneID="iTD-DJ-Q8b">
             <objects>
-                <viewController id="HJX-Pc-H8u" customClass="UITableViewController" sceneMemberID="viewController">
+                <viewController id="HJX-Pc-H8u" customClass="SongTableViewController" customModule="_35040_pam_project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="B3P-x0-wpK">
                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="301.5"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="UOe-lI-ECE" style="IBUITableViewCellStyleDefault" id="KIR-I1-2E6">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="songDataCell" id="KIR-I1-2E6" userLabel="songDataCell" customClass="SongTableViewCell" customModule="_35040_pam_project" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="187.5" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KIR-I1-2E6" id="ZJ4-AA-x2q">
                                     <rect key="frame" x="0.0" y="0.0" width="187.5" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UOe-lI-ECE">
-                                            <rect key="frame" x="16" y="0.0" width="155.5" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJQ-Lk-oLW">
+                                            <rect key="frame" x="6" y="10.5" width="42" height="22.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VJQ-Lk-oLW" secondAttribute="trailing" constant="20" symbolic="YES" id="3Gy-XJ-o5w"/>
+                                        <constraint firstItem="VJQ-Lk-oLW" firstAttribute="centerY" secondItem="ZJ4-AA-x2q" secondAttribute="centerY" id="8FB-V6-hZP"/>
+                                        <constraint firstItem="VJQ-Lk-oLW" firstAttribute="bottom" secondItem="ZJ4-AA-x2q" secondAttribute="bottomMargin" id="fyn-md-qwA"/>
+                                        <constraint firstItem="VJQ-Lk-oLW" firstAttribute="leading" secondItem="ZJ4-AA-x2q" secondAttribute="leadingMargin" constant="-10" id="nZA-tC-JX8"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="songNameLabel" destination="VJQ-Lk-oLW" id="h0d-Lu-Vht"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
@@ -435,26 +443,33 @@
             </objects>
             <point key="canvasLocation" x="3534" y="472"/>
         </scene>
-        <!--View Controller-->
+        <!--Music Image View Controller-->
         <scene sceneID="dhx-gI-A7h">
             <objects>
-                <viewController id="QGU-K8-4ZU" sceneMemberID="viewController">
+                <viewController id="QGU-K8-4ZU" customClass="MusicImageViewController" customModule="_35040_pam_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GM6-5Q-9lk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ycM-uA-wH4">
-                                <rect key="frame" x="62" y="25" width="251" height="251.5"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ycM-uA-wH4">
+                                <rect key="frame" x="62.5" y="26" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Mnh-LH-xlE"/>
+                                    <constraint firstAttribute="width" constant="250" id="ljH-DJ-xHO"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ycM-uA-wH4" firstAttribute="top" secondItem="GM6-5Q-9lk" secondAttribute="topMargin" constant="25" id="9jc-lG-veu"/>
-                            <constraint firstItem="ycM-uA-wH4" firstAttribute="centerX" secondItem="GM6-5Q-9lk" secondAttribute="centerX" id="GZQ-r2-Jti"/>
-                            <constraint firstItem="ycM-uA-wH4" firstAttribute="centerY" secondItem="GM6-5Q-9lk" secondAttribute="centerY" id="O6x-Vh-kh1"/>
-                            <constraint firstItem="ycM-uA-wH4" firstAttribute="leading" secondItem="GM6-5Q-9lk" secondAttribute="leadingMargin" constant="46" id="mqb-21-zxw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ycM-uA-wH4" secondAttribute="trailing" constant="46.5" id="J5L-Fj-LZc"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ycM-uA-wH4" secondAttribute="bottom" constant="25.5" id="dtP-HO-Zxg"/>
+                            <constraint firstItem="ycM-uA-wH4" firstAttribute="top" secondItem="GM6-5Q-9lk" secondAttribute="topMargin" constant="26" id="hoP-NN-kD4"/>
+                            <constraint firstItem="ycM-uA-wH4" firstAttribute="leading" secondItem="GM6-5Q-9lk" secondAttribute="leadingMargin" constant="46.5" id="x53-Ga-9Z3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="albumImage" destination="ycM-uA-wH4" id="d9y-oR-JdU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gf6-4E-p4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
