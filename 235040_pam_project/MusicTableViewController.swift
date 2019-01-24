@@ -12,6 +12,8 @@ class MusicTableViewController: UITableViewController {
     var albumNames = ["Kill'em All", "Ride the Lightning", "Master of Puppets", "...And Justice for All", "Metallica", "Load", "Reload", "Garage Inc", "S&M", "St. Anger", "Death Magnetic", "Hardwired...To Self-Destruct"]
     var authors = ["Metallica", "Metallica", "Metallica", "Metallica", "Metallica", "Metallica", "Metallica", "Metallica", "Metallica", "Metallica", "Metallica", "Metallica"]
     
+    var imageNames = ["killemall", "ridetl", "master", "justice", "metallica", "load", "reload", "garage", "sm", "stanger", "death", "hardwired"]
+    
     var albumSongs = [
         [
             "Hit the Lights", "The Four Horsemen", "Motorbreath", "Jump in the Fire", "(Anesthesia) Pulling Teeth", "Whiplash", "Phantom Lord", "No Remorse", "Seek & Destroy", "Metal Militia", "Am I Evil?", "Blitzkrieg"
@@ -69,16 +71,15 @@ class MusicTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return albumNames.count
     }
-
-    /*
+	
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cellIdentifier = "musicDataCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! MusicTableViewCell
+        cell.title?.text = albumNames[indexPath.row]
+        cell.author?.text = authors[indexPath.row]
+        cell.imageView?.image = UIImage(named: imageNames[indexPath.row])
         return cell
     }
-    */
 
     /*
     // In a storyboard-based application, you will often want to do a little preparation before navigation
