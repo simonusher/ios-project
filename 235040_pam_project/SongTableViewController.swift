@@ -10,6 +10,7 @@ import UIKit
 
 class SongTableViewController: UITableViewController {
     var songs: Array<String>!
+    var selectedSong: Int!
     override func viewDidLoad() {
         super.viewDidLoad()
 

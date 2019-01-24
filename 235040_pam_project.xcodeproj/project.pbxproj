@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1411DCB21F9EBFC006C1A04 /* PlayMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1411DCA21F9EBFC006C1A04 /* PlayMusicViewController.swift */; };
+		A1411DDA21F9EFAD006C1A04 /* 11cyanide.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1411DCE21F9EFA8006C1A04 /* 11cyanide.mp3 */; };
+		A1411DDB21F9EFAD006C1A04 /* 3master.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1411DCF21F9EFA8006C1A04 /* 3master.mp3 */; };
+		A1411DDC21F9EFAD006C1A04 /* 10anger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1411DD021F9EFA9006C1A04 /* 10anger.mp3 */; };
+		A1411DDD21F9EFAD006C1A04 /* 7fuel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1411DD121F9EFA9006C1A04 /* 7fuel.mp3 */; };
+		A1411DDE21F9EFAD006C1A04 /* 12hardwired.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1411DD221F9EFAA006C1A04 /* 12hardwired.mp3 */; };
+		A1411DDF21F9EFAD006C1A04 /* 2ride.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1411DD321F9EFAA006C1A04 /* 2ride.mp3 */; };
+		A1411DE021F9EFAD006C1A04 /* 1seek.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1411DD421F9EFAB006C1A04 /* 1seek.mp3 */; };
+		A1411DE121F9EFAD006C1A04 /* 4one.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1411DD521F9EFAB006C1A04 /* 4one.mp3 */; };
+		A1411DE221F9EFAD006C1A04 /* 6king.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1411DD621F9EFAC006C1A04 /* 6king.mp3 */; };
+		A1411DE321F9EFAD006C1A04 /* 5enter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1411DD721F9EFAC006C1A04 /* 5enter.mp3 */; };
+		A1411DE421F9EFAD006C1A04 /* 8whiskey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1411DD821F9EFAD006C1A04 /* 8whiskey.mp3 */; };
+		A1411DE521F9EFAD006C1A04 /* 9memory.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1411DD921F9EFAD006C1A04 /* 9memory.mp3 */; };
 		A150F14F21E7774800F2E8C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150F14E21E7774800F2E8C0 /* AppDelegate.swift */; };
 		A150F15121E7774800F2E8C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150F15021E7774800F2E8C0 /* ViewController.swift */; };
 		A150F15421E7774800F2E8C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A150F15221E7774800F2E8C0 /* Main.storyboard */; };
@@ -24,6 +37,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1411DCA21F9EBFC006C1A04 /* PlayMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicViewController.swift; sourceTree = "<group>"; };
+		A1411DCE21F9EFA8006C1A04 /* 11cyanide.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11cyanide.mp3; sourceTree = "<group>"; };
+		A1411DCF21F9EFA8006C1A04 /* 3master.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3master.mp3; sourceTree = "<group>"; };
+		A1411DD021F9EFA9006C1A04 /* 10anger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10anger.mp3; sourceTree = "<group>"; };
+		A1411DD121F9EFA9006C1A04 /* 7fuel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 7fuel.mp3; sourceTree = "<group>"; };
+		A1411DD221F9EFAA006C1A04 /* 12hardwired.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 12hardwired.mp3; sourceTree = "<group>"; };
+		A1411DD321F9EFAA006C1A04 /* 2ride.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2ride.mp3; sourceTree = "<group>"; };
+		A1411DD421F9EFAB006C1A04 /* 1seek.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1seek.mp3; sourceTree = "<group>"; };
+		A1411DD521F9EFAB006C1A04 /* 4one.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4one.mp3; sourceTree = "<group>"; };
+		A1411DD621F9EFAC006C1A04 /* 6king.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 6king.mp3; sourceTree = "<group>"; };
+		A1411DD721F9EFAC006C1A04 /* 5enter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5enter.mp3; sourceTree = "<group>"; };
+		A1411DD821F9EFAD006C1A04 /* 8whiskey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 8whiskey.mp3; sourceTree = "<group>"; };
+		A1411DD921F9EFAD006C1A04 /* 9memory.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 9memory.mp3; sourceTree = "<group>"; };
 		A150F14B21E7774800F2E8C0 /* 235040_pam_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 235040_pam_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A150F14E21E7774800F2E8C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A150F15021E7774800F2E8C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +79,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1411DCD21F9EF6F006C1A04 /* songs */ = {
+			isa = PBXGroup;
+			children = (
+				A1411DD421F9EFAB006C1A04 /* 1seek.mp3 */,
+				A1411DD321F9EFAA006C1A04 /* 2ride.mp3 */,
+				A1411DCF21F9EFA8006C1A04 /* 3master.mp3 */,
+				A1411DD521F9EFAB006C1A04 /* 4one.mp3 */,
+				A1411DD721F9EFAC006C1A04 /* 5enter.mp3 */,
+				A1411DD621F9EFAC006C1A04 /* 6king.mp3 */,
+				A1411DD121F9EFA9006C1A04 /* 7fuel.mp3 */,
+				A1411DD821F9EFAD006C1A04 /* 8whiskey.mp3 */,
+				A1411DD921F9EFAD006C1A04 /* 9memory.mp3 */,
+				A1411DD021F9EFA9006C1A04 /* 10anger.mp3 */,
+				A1411DCE21F9EFA8006C1A04 /* 11cyanide.mp3 */,
+				A1411DD221F9EFAA006C1A04 /* 12hardwired.mp3 */,
+			);
+			path = songs;
+			sourceTree = "<group>";
+		};
 		A150F14221E7774800F2E8C0 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +117,7 @@
 		A150F14D21E7774800F2E8C0 /* 235040_pam_project */ = {
 			isa = PBXGroup;
 			children = (
+				A1411DCD21F9EF6F006C1A04 /* songs */,
 				AD09489221F800AA00E103AE /* BookDetailViewController.swift */,
 				A150F14E21E7774800F2E8C0 /* AppDelegate.swift */,
 				A150F15021E7774800F2E8C0 /* ViewController.swift */,
@@ -87,6 +133,7 @@
 				ADE3450421F947D600A26FAB /* MusicImageViewController.swift */,
 				ADE3450621F9494400A26FAB /* SongTableViewController.swift */,
 				ADE3450821F94A7800A26FAB /* SongTableViewCell.swift */,
+				A1411DCA21F9EBFC006C1A04 /* PlayMusicViewController.swift */,
 			);
 			path = 235040_pam_project;
 			sourceTree = "<group>";
@@ -149,9 +196,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1411DE021F9EFAD006C1A04 /* 1seek.mp3 in Resources */,
 				A150F15921E7774A00F2E8C0 /* LaunchScreen.storyboard in Resources */,
 				A150F15621E7774A00F2E8C0 /* Assets.xcassets in Resources */,
+				A1411DDE21F9EFAD006C1A04 /* 12hardwired.mp3 in Resources */,
+				A1411DDB21F9EFAD006C1A04 /* 3master.mp3 in Resources */,
+				A1411DDD21F9EFAD006C1A04 /* 7fuel.mp3 in Resources */,
+				A1411DE221F9EFAD006C1A04 /* 6king.mp3 in Resources */,
+				A1411DDC21F9EFAD006C1A04 /* 10anger.mp3 in Resources */,
+				A1411DDA21F9EFAD006C1A04 /* 11cyanide.mp3 in Resources */,
+				A1411DE521F9EFAD006C1A04 /* 9memory.mp3 in Resources */,
 				A150F15421E7774800F2E8C0 /* Main.storyboard in Resources */,
+				A1411DDF21F9EFAD006C1A04 /* 2ride.mp3 in Resources */,
+				A1411DE321F9EFAD006C1A04 /* 5enter.mp3 in Resources */,
+				A1411DE421F9EFAD006C1A04 /* 8whiskey.mp3 in Resources */,
+				A1411DE121F9EFAD006C1A04 /* 4one.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +231,7 @@
 				ADE50BD521F8E9A80097D915 /* MusicTableViewCell.swift in Sources */,
 				ADE3450321F945A600A26FAB /* MusicDetailViewController.swift in Sources */,
 				AD09489321F800AA00E103AE /* BookDetailViewController.swift in Sources */,
+				A1411DCB21F9EBFC006C1A04 /* PlayMusicViewController.swift in Sources */,
 				ADE50BD321F8E9870097D915 /* MusicTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

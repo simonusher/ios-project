@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lWF-Dj-RCl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lWF-Dj-RCl">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -441,7 +441,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yk4-yb-Tjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3534" y="472"/>
+            <point key="canvasLocation" x="3532.8000000000002" y="471.36431784107947"/>
         </scene>
         <!--Music Image View Controller-->
         <scene sceneID="dhx-gI-A7h">
@@ -466,6 +466,7 @@
                             <constraint firstItem="ycM-uA-wH4" firstAttribute="top" secondItem="GM6-5Q-9lk" secondAttribute="topMargin" constant="26" id="hoP-NN-kD4"/>
                             <constraint firstItem="ycM-uA-wH4" firstAttribute="leading" secondItem="GM6-5Q-9lk" secondAttribute="leadingMargin" constant="46.5" id="x53-Ga-9Z3"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="IPt-qR-3Zl"/>
                     </view>
                     <connections>
                         <outlet property="albumImage" destination="ycM-uA-wH4" id="d9y-oR-JdU"/>
@@ -475,19 +476,36 @@
             </objects>
             <point key="canvasLocation" x="3589.5999999999999" y="-99.850074962518747"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Music View Controller-->
         <scene sceneID="u43-Fc-F0u">
             <objects>
-                <viewController id="JaP-bS-BZ6" sceneMemberID="viewController">
+                <viewController id="JaP-bS-BZ6" customClass="PlayMusicViewController" customModule="_35040_pam_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uu7-1U-yT5">
                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="301.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0L-Rh-VkV">
+                                <rect key="frame" x="84" y="139" width="20" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="togglePlayPause:" destination="JaP-bS-BZ6" eventType="touchUpInside" id="TQP-0c-lND"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Igg-I4-ckW"/>
                     </view>
+                    <connections>
+                        <outlet property="playButton" destination="l0L-Rh-VkV" id="lSx-se-sO4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgj-rD-40n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4034" y="257"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="play" width="20" height="23"/>
+    </resources>
 </document>

@@ -52,6 +52,8 @@ class MusicTableViewController: UITableViewController {
             "Hardwired", "Atlas, Rise", "Now That We're Dead", "Moth Into Flame", "Dream No More", "Halo On Fire", "Confusion", "ManUNkind", "Here Comes Revenge", "Am I Savage?", "Murder One", "Spit Out The Bone"
         ]
     ]
+    
+    var songNames = ["1seek", "2ride", "3master", "4one", "5enter", "6king", "7fuel", "8whiskey", "9memory", "10anger", "11cyanide", "12hardwired"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -88,6 +90,7 @@ class MusicTableViewController: UITableViewController {
                 let destinationController = segue.destination as! MusicDetailViewController
                 destinationController.imageName = imageNames[indexPath.row]
                 destinationController.songs = albumSongs[indexPath.row]
+                destinationController.playedSongName = songNames[indexPath.row]
             }
         }
     }
